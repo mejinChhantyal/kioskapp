@@ -2,6 +2,7 @@ import React , {useEffect} from 'react'
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+import logo from './logo.png'
 
 const Navbar = () => {
 
@@ -45,8 +46,7 @@ useEffect(() => {
 return (
 <nav className="navbar navbar-expand-lg navbar-mainbg">
     <NavLink className="navbar-brand navbar-logo" to="/" exact>
-    <img src="mlogo.png"></img>
-       Milwaukee County 
+        <img className='navbar-logo' src= {logo}></img>
     </NavLink>
     <button className="navbar-toggler"onClick={ function(){
         setTimeout(function(){ animation(); });
