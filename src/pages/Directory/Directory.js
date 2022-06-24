@@ -1,12 +1,26 @@
-import React from 'react'
+import "./Directory.css";
+import { useState } from "react";
 
 const Directory = () => {
-    return (
-        <div className="container">
-            <h1 className ="text-center" style = {{paddingTop:"30%"}}>
-                Directory
-            </h1>
-        </div>
-    )
-}
+
+
+
+  return <div className="app-container">
+    <table>
+      <thead>
+        <tr>
+          <th>JUDGE</th>
+          <th>DEPUTY COURT CLERK</th>
+          <th>ROOM</th>
+          <th>BUILDING</th>
+          <th>DEPARTMENT</th>
+          <th>PHONE</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table> 
+  </div>
+};
+
 export default Directory;
