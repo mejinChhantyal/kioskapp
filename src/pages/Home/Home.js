@@ -22,10 +22,10 @@ const Home = () => {
         // </div>
             <div className="slide-container">
             <Slide>
-            {slideImages.map((slideImage, index)=> (
+            {slideImages.map((slideImages, index)=> (
                 <div className="each-slide" key={index}>
-                    <div style={{'backgroundImage': `url(${slideImage.url})`}}>
-                    <span>{slideImage.caption}</span>
+                    <div style={{'backgroundImage': `url(${slideImages.url})`}}>
+                    <span>{slideImages.caption}</span>
                     </div>
                 </div>
                 ))} 
