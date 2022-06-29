@@ -43,9 +43,9 @@ const App = () => {
         <Route path="/service" exact>
           <Services/>
         </Route>
-        <Route path="/contact" exact>
+        {/* <Route path="/contact" exact>
           <Contact/>
-        </Route>
+        </Route> */}
         <Route path="/feedback" exact>
           <Feedback/>
         </Route>

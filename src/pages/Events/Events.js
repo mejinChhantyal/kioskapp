@@ -1,4 +1,5 @@
 import React from "react";
+import './Events.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min.js';
@@ -18,10 +19,9 @@ const Events = () => {
         //     </h1>
         // </div>
         <div className="MainDiv">
-    <div class="jumbotron text-center">
-        <h3>Milwaukee County</h3>
-    </div>
-    
+    {/* <div class="jumbotron text-center">
+    <h1>Calender</h1>
+    </div> */}
     <div className="container">
         <FullCalendar
             plugins={[ dayGridPlugin, interactionPlugin ]}
@@ -33,8 +33,10 @@ const Events = () => {
             }}
             initialView="dayGridMonth"
             events={[
-            { title: 'I.C. Stars', date: '2022-06-21' },
-            { title: 'Events.', date: '2022-06-22' }
+            { title: 'I.C. Stars', date: '2022-06-24' },
+            { title: 'Events.', date: '2022-06-22' },
+            {title:'Taizon', date: '2022-06-27'},
+            {title:'hiba gift', date:'2022-06-28'}
             ]}
         />
         </div>
@@ -51,13 +53,12 @@ const Events = () => {
                 
                 </div>
             
-                <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+                {/* <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> */}
+                {/* </div> */}
             </div>
         </div>
-    
+        </div>
     </div>
     );
 }

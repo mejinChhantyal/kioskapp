@@ -7,8 +7,6 @@ const colors = {
     
 };
 
-
-
 function Feedback() {
 const [currentValue, setCurrentValue] = useState(0);
 const [hoverValue, setHoverValue] = useState(undefined);
@@ -52,7 +50,7 @@ return (
         placeholder="What's your experience?"
         style={styles.textarea}
     />
-
+    
     <button
         style={styles.button}
     >

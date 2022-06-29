@@ -2,7 +2,7 @@ import React from 'react'
 
 const Service = () => {
     return (
-        <div className="container">
+        <div className="containers">
             <h1 className ="text-center" style = {{paddingTop:"30%"}}>
                 Service
             </h1>

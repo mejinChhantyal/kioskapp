@@ -1,11 +1,15 @@
-import React , {useEffect} from 'react'
+import React , {useState,useEffect} from 'react'
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 import logo from './logo.png'
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+
 
 const Navbar = () => {
-
 function animation(){
     var tabsNewAnim = $('#navbarSupportedContent');
     var activeItemNewAnim = tabsNewAnim.find('.active');
@@ -46,7 +50,11 @@ useEffect(() => {
 return (
 <nav className="navbar navbar-expand-lg navbar-mainbg">
     <NavLink className="navbar-brand navbar-logo" to="/" exact>
+<<<<<<< Updated upstream
         <img className='navbar-logo' src= {logo}></img>
+=======
+    <img className='navbar-logo' src= {logo}></img>
+>>>>>>> Stashed changes
     </NavLink>
     <button className="navbar-toggler"onClick={ function(){
         setTimeout(function(){ animation(); });
@@ -105,24 +113,24 @@ return (
                 </i>Services
             </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
             <NavLink className="nav-link" to="/contact" exact>
                 <i 
                 className="far fa-address-book">
                 </i>Contact Us
             </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
             <NavLink className="nav-link" to="/feedback" exact>
                 <i 
                 className="far fa-comment">
                 </i>Feedback
             </NavLink>
-            </li>
-            
+            </li>        
         </ul>
     </div>
 </nav>
 )
 }
+
 export default Navbar;
