@@ -3,10 +3,6 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 import logo from './logo.png'
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 
 const Navbar = () => {
@@ -50,11 +46,7 @@ useEffect(() => {
 return (
 <nav className="navbar navbar-expand-lg navbar-mainbg">
     <NavLink className="navbar-brand navbar-logo" to="/" exact>
-<<<<<<< Updated upstream
-        <img className='navbar-logo' src= {logo}></img>
-=======
     <img className='navbar-logo' src= {logo}></img>
->>>>>>> Stashed changes
     </NavLink>
     <button className="navbar-toggler"onClick={ function(){
         setTimeout(function(){ animation(); });
