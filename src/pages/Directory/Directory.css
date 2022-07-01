@@ -12,6 +12,7 @@
     padding: 1rem;
     background-color: rgb( 190, 198, 196);
     border-radius: 15px 30px 30px 15px;
+    animation: scroll 50s linear infinite;
 }
 
 
@@ -42,3 +43,7 @@ td {
     font-size: 28px;
   }
   
+  .slide-track{
+    display: flex;
+    width: calc(250px *18);
+    animation: scroll 50s linear infinite};
