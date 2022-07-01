@@ -12,7 +12,7 @@
 .slide-track{
     display: flex;
     width: calc(250px *18);
-    animation: scroll 40s linear infinite;
+    animation: scroll 50s linear infinite;
 }
 @keyframes scroll{
     0%{
@@ -33,7 +33,7 @@
 img{
     height: 80%;
     width: 80%;
-    transition: transform 1%;
+    transition: transform 30%;
 }
 img:hover{
     transform: translateZ(20px);
