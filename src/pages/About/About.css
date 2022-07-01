@@ -2,10 +2,10 @@
 .card {
     margin:  auto;
     width: 500px;
-    height: 600px;
+    height: 700px;
     perspective: 1000px;
     border: 2px;
     background-color: rgb(212, 216, 215);
-  }
+}
  
  
