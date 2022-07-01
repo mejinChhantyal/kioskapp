@@ -7,9 +7,9 @@ function jobs() {
 return (
     <div>
     <Card className='scan'>
-        <Card.Header as="h3">Interested in joining Milwaukee County?</Card.Header>
+        <Card.Header as="h1">Interested in joining Milwaukee County?</Card.Header>
         <Card.Body>
-            <Card.Title>Job Openings</Card.Title>
+            {/* <Card.Title as= "h2">Job Openings</Card.Title> */}
             <Card.Text>
                 Milwaukee County is searching for authentic people who are out to change the game and bring their whole selves to work every day.
                 Come and join our team and discover our diverse and versatile community of independent spirits and unique talents, 
