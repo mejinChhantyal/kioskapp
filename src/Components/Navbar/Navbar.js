@@ -55,12 +55,12 @@ return (
     <NavLink className="navbar-brand navbar-logo" to="/" exact>
     <img className='navbar-logo' src= {logo}></img>
     </NavLink>
-     <button className="navbar-toggler"onClick={ function(){
+     {/* <button className="navbar-toggler"onClick={ function(){
         setTimeout(function(){ animation(); });
         }}
         type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i className="fas fa-bars text-white"></i>
-    </button> 
+    </button>  */}
 
     <div 
         className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -128,21 +128,23 @@ return (
             </li>        
         </ul>
         <div className="time">
-            <p>
-              {' '}
-              {dateState.toLocaleDateString('en-GB', {
-              day: 'numeric',
-              month: 'short',
-              year: 'numeric',
-              })}
-            </p>
-            <p>
+            <div className='date'>
+            <p> 
+            {' '}
+            {dateState.toLocaleDateString('en-US', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric',
+            })}
+             </p>
+            <p> 
             {dateState.toLocaleString('en-US', {
                 hour: 'numeric',
                 minute: 'numeric',
                 hour12: true,
             })}
             </p>
+            </div>
         </div>
     </div>
     
