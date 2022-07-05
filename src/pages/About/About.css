@@ -1,11 +1,42 @@
-
-.card {
-    margin:  auto;
-    width: 500px;
-    height: 700px;
-    perspective: 1000px;
-    border: 2px;
-    background-color: rgb(212, 216, 215);
+.card{
+    height: 400px;
+    width: 440px;
+    position: flex;
+    float: left;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
 }
- 
- 
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.front{
+    background: linear-gradient(#08aeea, #ffffff);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: linear-gradient(#f8da61, #ff5acd);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.containers:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.containers{
+    perspective: 1000px;
+}
