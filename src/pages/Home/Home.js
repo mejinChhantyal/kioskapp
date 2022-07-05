@@ -8,15 +8,15 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div class = "slider">
+        <div class = "sliderr">
             <div class= "slide-track">
-                <div class = "slide">
+                <div class = "sliderr">
                     <img src= {homeImage}></img>
                 </div>
-                <div class = "slide">
+                <div class = "sliderr">
                     <img src= {weapon}></img>
                 </div>
-                <div class = "slide">
+                <div class = "sliderr">
                     <img src= {zeroTolerance}></img>
                 </div>
             </div>

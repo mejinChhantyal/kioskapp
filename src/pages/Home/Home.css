@@ -1,7 +1,4 @@
- body{
-    display: grid;
-} 
-.slider {
+.sliderr {
     height: 250px;
     margin: auto;
     position: relative;
@@ -12,7 +9,7 @@
 .slide-track{
     display: flex;
     width: calc(250px *18);
-    animation: scroll 50s linear infinite;
+    animation: scroll 35s linear infinite;
 }
 @keyframes scroll{
     0%{
@@ -22,7 +19,7 @@
         transform: translateX(calc(-250px*9));
     }
 }
-.slide {
+.sliderr {
     height: 500px;
     width: 400px;
     display: flex;
@@ -38,8 +35,8 @@ img{
 img:hover{
     transform: translateZ(20px);
 }
-.slider::before,
-.slider::after{
+.sliderr::before,
+.sliderr::after{
     background: linear-gradient(to right, rgb(250, 249, 249) 0%,
     rgb(255, 255, 255, 0) 100%);
     contain: '';
@@ -48,7 +45,7 @@ img:hover{
     width: 15%;
     z-index: 2;
 }
-.slider::before{
+.sliderr::before{
     left: 0;
     right: 0;
 }
