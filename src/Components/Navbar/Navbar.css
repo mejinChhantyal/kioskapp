@@ -29,10 +29,10 @@ background-color: black; */
 /* background-image: url('logo.png'); */
 /*  */
 /* padding: 15px; */
-height: 98px;
-width: 98px;
+height: 75px;
+width: 75px;
 top: 0px;
-right: 0px;
+right: 2px;
 position: absolute;
 pointer-events: none;
 background-color: black;
@@ -162,4 +162,5 @@ left: -80px;
     bottom: -25px;
     left: -25px;
 }
+
 }

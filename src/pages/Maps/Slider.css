@@ -1,10 +1,11 @@
 .container-slider {
-    max-width: 1100px;
-    height: 600px;
+    max-width: 1000px;
+    height: 500px;
     margin: 100px auto 0;
     position: relative;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    bottom: 65px
   }
   @media screen and (max-width: 700px){
     .container-slider {
@@ -16,7 +17,7 @@
     height: 100%;
     position: absolute;
     opacity: 0;
-    transition: opacity ease-in-out 0.4s;
+    transition: opacity ease-in-out 0.43s;
   }
   .slide img {
     width: 100%;

@@ -92,6 +92,13 @@ return (
             </NavLink> 
             </li>
             <li className="nav-item">
+            <NavLink className="nav-link" to="/maps" exact>
+                <i 
+                className="far fa-map">
+                </i>Maps
+            </NavLink> 
+            </li>
+            <li className="nav-item">
             <NavLink className="nav-link" to="/event" exact>
                 <i 
                 className="far fa-calendar">
