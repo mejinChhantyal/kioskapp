@@ -77,18 +77,25 @@ return (
                 </i>Home
             </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
             <NavLink className="nav-link" to="/about" exact>
                 <i 
                 className="far fa-address-book">
                 </i>About
             </NavLink> 
-            </li>
+            </li> */}
             <li className="nav-item">
-            <NavLink className="nav-link" to="/directory" exact>
+            <NavLink className="nav-link" to="/map" exact>
                 <i 
                 className="far fa-map">
                 </i>Directory
+            </NavLink> 
+            </li>
+            <li className="nav-item">
+            <NavLink className="nav-link" to="/directory" exact>
+                <i  
+                className="fas fa-map-marker-alt">
+                </i>Map
             </NavLink> 
             </li>
             <li className="nav-item">
@@ -143,6 +150,8 @@ return (
                 minute: 'numeric',
                 hour12: true,
             })}
+            
+            
             </p>
             </div>
         </div>

@@ -33,10 +33,15 @@ const Events = () => {
             }}
             initialView="dayGridMonth"
             events={[
-            { title: 'I.C. Stars', date: '2022-06-24' },
-            { title: 'Events.', date: '2022-06-22' },
-            {title:'Taizon', date: '2022-06-27'},
-            {title:'hiba gift', date:'2022-06-28'}
+            { title: 'Mitchell Park Domes Summer Show: Faerie Gardens', date: '2022-06-10' },
+            { title: 'Little Wonders: Froggy Fun, at Wehr Nature Center.', date: '2022-06-11' },
+            {title:'Milwaukee County Board of Supervisors', date: '2022-07-28'},
+            {title:'Economic and Community Development Committee', date:'2022-07-25'},
+            {title:'Parks, Energy Environment Committee', date:'2022-07-19'},
+            {title:'Independence Day', date:'2022-07-04'},
+            {title:'Finance Committee', date:'2022-07-21'},
+            {title:'Commission on Aging', date:'2022-07-28'},
+            {title:'Audit Committee', date:'2022-07-20'},    
             ]}
         />
         </div>

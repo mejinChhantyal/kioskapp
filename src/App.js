@@ -11,7 +11,10 @@ import Services from './pages/Sevice/Service';
 import Events from './pages/Events/Events';
 import Directory from './pages/Directory/Directory';
 import Jobs from './pages/Jobs/jobs';
+import Map from'./pages/Map/Map';
 import Navbar from './Components/Navbar/Navbar';
+
+
 import Feedback from './pages/Feedback/Feedback';
 
 const App = () => {
@@ -28,6 +31,9 @@ const App = () => {
         </Route>
         <Route path="/directory" exact>
           <Directory/>
+        </Route>
+        <Route path="/map" exact>
+          <Map/>
         </Route>
         <Route path="/event" exact>
           <Events/>

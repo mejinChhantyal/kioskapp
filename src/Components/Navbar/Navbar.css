@@ -6,7 +6,8 @@ background-image: url('mlogo.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: auto;
-background-color: #f9fcf3;
+background-attachment: fixed;
+background-color: #ffffff;
 }
 * {
 margin: 0;
@@ -16,20 +17,7 @@ i {
 margin-right: 10px;
 }
 .navbar-logo {
-    /* width: 85px;
-height: 85px; 
-padding: 10px;
-position: absolute;
-top:0px;
-
-
-left:0px;
-background-color: black; */
-
-/* background-image: url('logo.png'); */
-/*  */
-/* padding: 15px; */
-height: 98px;
+height: 96px;
 width: 98px;
 top: 0px;
 right: 0px;
@@ -42,6 +30,7 @@ text-align: right;
 .navbar-mainbg {
 background-color: #070707;
 padding: 0px;
+height: 98px;
 }
 #navbarSupportedContent {
 overflow: hidden;
@@ -161,5 +150,11 @@ left: -80px;
 .hori-selector .right:before {
     bottom: -25px;
     left: -25px;
+}
+
+.time{
+    font-size: 30px;
+    left: 30px;
+    color: #d21818;
 }
 }

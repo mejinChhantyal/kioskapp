@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';                                                 
 
 const colors = {
     orange: "#FFBA5A",
@@ -8,9 +10,23 @@ const colors = {
 };
 
 function Feedback() {
+    // const submit =()=>{
+    // toast.success('Successfull Submit',{position: toast.POSITION.BOTTOM_CENTER})
+    // }
+    const [inputValue, setInputValue] = useState("");
 const [currentValue, setCurrentValue] = useState(0);
 const [hoverValue, setHoverValue] = useState(undefined);
 const stars = Array(5).fill(0)
+
+const handleUserInput = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const resetInputField = () => {
+    setInputValue("");
+    toast.success('Successfull Submit',{position: toast.POSITION.BOTTOM_CENTER})
+    setHoverValue(undefined)
+  };
 
 const handleClick = value => {
     setCurrentValue(value)
@@ -27,7 +43,7 @@ const handleMouseLeave = () => {
 
 return (
     <div style={styles.container}>
-    <h1>Review for kiosk </h1>
+    {/* <h1>Review for kiosk </h1> */}
     <div style={styles.stars}>
         {stars.map((_, index) => {
         return (
@@ -46,17 +62,18 @@ return (
         )
         })}
     </div>
-    <textarea
+    <textarea type="text" placeholder="What's your experience?"  value={inputValue} onChange={handleUserInput} style={styles.textarea}/>
+    {/* <textarea
         placeholder="What's your experience?"
         style={styles.textarea}
-    />
+    /> */}
     
-    <button
+    <button onClick={resetInputField}
         style={styles.button}
     >
         Submit
     </button>
-    
+    <ToastContainer />
     </div>
 );
 };
@@ -66,7 +83,7 @@ const styles = {
 container: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
 },
 stars: {
     display: "flex",
