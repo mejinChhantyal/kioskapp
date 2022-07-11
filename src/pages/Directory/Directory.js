@@ -1,12 +1,9 @@
-import Glide from './Glide'
-
+import React from 'react'
 
 function Directory() {
   return (
-    <>
-      <Glide />
-    </>
-  );
+    <div>Directory</div>
+  )
 }
 
-export default Directory;
+export default Directory

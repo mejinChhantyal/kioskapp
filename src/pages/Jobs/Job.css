@@ -1,5 +1,5 @@
 .scan{
-    width: 780px;
+    width: 850px;
     height: 300px;
     border: 3px;
     font-size: 20px;
@@ -13,7 +13,7 @@
 .qrcode{
 position: absolute;
    top: 127px;
-   right: 0px;
+   right: 30px;
    width: 300px;
    height: 302px;
 }

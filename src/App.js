@@ -11,7 +11,7 @@ import Services from './pages/Sevice/Service';
 import Events from './pages/Events/Events';
 import Directory from './pages/Directory/Directory';
 import Jobs from './pages/Jobs/jobs';
-import Map from'./pages/Map/Map';
+import Maps from'./pages/Maps/Maps';
 import Navbar from './Components/Navbar/Navbar';
 
 
@@ -32,8 +32,8 @@ const App = () => {
         <Route path="/directory" exact>
           <Directory/>
         </Route>
-        <Route path="/map" exact>
-          <Map/>
+        <Route path="/maps" exact>
+          <Maps/>
         </Route>
         <Route path="/event" exact>
           <Events/>

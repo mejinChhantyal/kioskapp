@@ -85,14 +85,14 @@ return (
             </NavLink> 
             </li> */}
             <li className="nav-item">
-            <NavLink className="nav-link" to="/map" exact>
+            <NavLink className="nav-link" to="/directory" exact>
                 <i 
                 className="far fa-map">
                 </i>Directory
             </NavLink> 
             </li>
             <li className="nav-item">
-            <NavLink className="nav-link" to="/directory" exact>
+            <NavLink className="nav-link" to="/maps" exact>
                 <i  
                 className="fas fa-map-marker-alt">
                 </i>Map
