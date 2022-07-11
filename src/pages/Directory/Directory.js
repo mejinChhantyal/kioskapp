@@ -2,7 +2,7 @@ import React from 'react'
 
 function Directory() {
   return (
-    <div>Directory</div>
+    <div></div>
   )
 }
 
